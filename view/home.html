@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/vendor/template/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/estilo.css" />
+    <title>Principio</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <h1 class="visually-hidden">ALTIROCA Inicio</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="d-flex align-items-center" aria-labelledby="hero-title">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" controls
+                poster="./public/img/alpinismo.jpg" aria-label="Video introductorio de actividades de montaña">
+                <source src="./public/video/alpinismo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container text-center">
+                <h2 id="hero-title" class="mx-auto my-0 text-uppercase fw-bold">ALTIROCA</h2>
+                <p class="text-white-50 mx-auto mt-2 mb-5">Equipamiento para conquistar alturas.</p>
+                <a class="btn btn-primary" href="./view/servicios.html" onclick="loadPage(event,this.href)">Descubre
+                    más</a>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

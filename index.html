@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Página de Servicios</title>
+    <link rel="icon" type="image/x-icon" href="./public/vendor/template/assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="./public/fonts/fontawesome-6/css/all.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./public/vendor/template/css/styles.css" rel="stylesheet" />
+    <link href="./public/css/estilo.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-2 px-lg-5">
+                <a class="navbar-brand" href="./view/home.html" onclick="loadPage(event,this.href)">
+                    <div class="titulo">
+                        <h1 data-text="ALTIROCA"><span>ALTIROCA</span></h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    MENU
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link menu-link text-dark fw-bold fs-5"
+                                href="./view/servicios.html" onclick="loadPage(event,this.href)">SERVICIOS</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link text-dark fw-bold fs-5"
+                                href="./view/about.html" onclick="loadPage(event,this.href)">SOBRE NOSOTROS</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link text-dark fw-bold fs-5"
+                                href="./view/contacto.html" onclick="loadPage(event,this.href)">CONTACTOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="bg-black text-white py-3 col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">Localización:</h4>
+                    <p class="mb-0">El Beaterio<br>Calle, Virginia</p>
+                </div> -->
+                <div>
+                    <h4 class="text-uppercase mb-2">Acerca de mi pagina web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-12 py-0">Copyright &copy; Mi primer programa 2025</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        function loadPage(ev, url) {
+            if (ev) ev.preventDefault();
+            const main = document.getElementById('main');
+            main.innerHTML = '<div class="text-center text-white-50 py-5">Cargando...</div>';
+
+            fetch(url)
+                .then(r => {
+                    if (!r.ok) throw new Error(r.statusText);
+                    return r.text();
+                })
+                .then(html => {
+                    const doc = new DOMParser().parseFromString(html, 'text/html');
+                    // solo insertamos el <main> de la vista
+                    const inner = doc.querySelector('main')?.innerHTML || html;
+                    main.innerHTML = inner;
+                    window.dispatchEvent(new Event('content:loaded'));
+                })
+                .catch(err => {
+                    console.error(err);
+                    main.innerHTML = '<div class="text-danger text-center py-5">Error al cargar</div>';
+                });
+        }
+        // carga inicial
+        loadPage(null, './view/home.html');
+    </script>
+
+</body>
+
+</html>

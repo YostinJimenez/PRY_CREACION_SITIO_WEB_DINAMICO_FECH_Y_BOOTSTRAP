@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/vendor/template/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/vendor/bootstrap-5/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/estilo.css">
+    <title>SERVICIOS</title>
+</head>
+
+<body class="encabezados" id="page-top">
+    <header>
+        <nav class="bg-dark fixed-top" style="z-index:50;">
+            <div class="container-fluid">
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
+                    <span class="navbar-brand text-white fw-bold m-0">ALTIROCA</span>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sobre-nosotros">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contactos">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="servicios">
+        <section class="encabezados fondo_2 projects-section bg-inherit" id="projects">
+
+            <!-- Carrusel como artículo -->
+            <article aria-labelledby="equipos-title" class="mb-4 mt-3">
+                <h2 id="equipos-title" class="visually-hidden">Equipos destacados</h2>
+                <div id="carouselEquiposTop" class="carousel slide mb-4 mt-3" data-bs-ride="false"
+                    data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselEquiposTop" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Arnés y Casco"></button>
+                        <button type="button" data-bs-target="#carouselEquiposTop" data-bs-slide-to="1"
+                            aria-label="Piolet y Crampones"></button>
+                        <button type="button" data-bs-target="#carouselEquiposTop" data-bs-slide-to="2"
+                            aria-label="Mochila y Cinta"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 shadow-sm">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <a class="d-block position-relative overflow-hidden" data-bs-toggle="modal"
+                                        data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo.jpg" alt="Arnés" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="d-block position-relative overflow-hidden" data-bs-toggle="modal"
+                                        data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo1.jpg" alt="Casco" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo2.jpg" alt="Piolet" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo3.jpg" alt="Crampones" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo4.jpg" alt="Mochila" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                        <img src="./public/img/imagen-alpinismo5.jpg" alt="Cinta Express" class="w-100"
+                                            style="height:260px;object-fit:cover;object-position:center;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquiposTop"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEquiposTop"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Rejilla de productos como artículo -->
+            <article class="container py-1 px-1" aria-labelledby="grid-title">
+                <h2 id="grid-title" class="visually-hidden">Catálogo</h2>
+                <div class="projects-grid">
+                    <a class="imagenes item item--small" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-arnes">
+                        <div class="text">
+                            <p class="h1 text-white">Arnés</p>
+                        </div>
+                        <img src="./public/img/imagen-arnes.jpg" alt="Arnés">
+                    </a>
+
+                    <a class="imagenes item item--wide" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-casco">
+                        <div class="text">
+                            <p class="h1 text-white">Casco</p>
+                        </div>
+                        <img src="./public/img/imagen-casco.jpg" alt="imagen casco">
+                    </a>
+
+                    <a class="imagenes item item--small" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-piolet">
+                        <div class="text">
+                            <p class="h1 text-white">Piolet</p>
+                        </div>
+                        <img src="./public/img/imagen-piolet.jpg" alt="imagen piolet">
+                    </a>
+
+                    <a class="imagenes item item--small" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-mochila">
+                        <div class="text">
+                            <p class="h1 text-white">Mochilas</p>
+                        </div>
+                        <img src="./public/img/imagen-mochila.jpg" alt="imagen mochila">
+                    </a>
+
+                    <a class="imagenes item item--small" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-cinta">
+                        <div class="text">
+                            <p class="h1 text-white">Cinta Express</p>
+                        </div>
+                        <img src="./public/img/imagen-cinta-express.jpg" alt="imagen cinta express">
+                    </a>
+
+                    <a class="imagenes item item--small" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#modal-crampones">
+                        <div class="text">
+                            <p class="h1 text-white">Crampones</p>
+                        </div>
+                        <img src="./public/img/imagen-crampones.jpg" alt="imagen crampones">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Información lateral como aside -->
+            <aside class="container my-4" aria-label="Consejos de seguridad">
+                <div class="bg-dark bg-opacity-50 text-white p-3 rounded">
+                    <h3 class="h6 mb-2">Consejos</h3>
+                    <ul class="mb-0">
+                        <li>Usa casco y arnés certificados.</li>
+                        <li>Revisa clima antes de salir.
+                            <ol class="mt-1">
+                                <li>Pronóstico 24h</li>
+                                <li>Viento y temperatura</li>
+                                <li>Alertas locales</li>
+                            </ol>
+                        </li>
+                        <li>Hidrátate y lleva kit básico.
+                            <ul class="mt-1">
+                                <li>Agua (≥2L)</li>
+                                <li>Botiquín
+                                    <ul>
+                                        <li>Vendas</li>
+                                        <li>Antiséptico</li>
+                                        <li>Guantes</li>
+                                    </ul>
+                                </li>
+                                <li>Snacks energéticos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Consejos rápidos en audio -->
+            <section id="consejos-audio" class="container my-4" aria-labelledby="consejos-audio-title">
+              <header class="mb-2">
+                <h2 id="consejos-audio-title" class="h5 text-white">Consejos rápidos (audio)</h2>
+              </header>
+              <audio controls preload="metadata" class="w-100"
+                     aria-label="Consejos de seguridad para actividades de montaña">
+                <source src="../public/audio/consejos.mp3" type="audio/mpeg">
+              </audio>
+            </section>
+
+            <!-- Preparación (reemplaza al video demostrativo) -->
+            <section id="preparacion" class="container my-5" aria-labelledby="prep-title">
+                <header class="mb-3">
+                    <h2 id="prep-title" class="h4 text-white">Preparación: Ropa, Nutrición y Técnica</h2>
+                </header>
+                <div class="row g-4">
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 bg-dark text-white">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/DDBIVwQI_Mw?rel=0&fs=0&modestbranding=1&controls=1"
+                                    title="Ropa de montaña" loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    style="border:0;">
+                                </iframe>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h6">Ropa</h3>
+                                <p class="card-text small">Capas adecuadas (base, térmica, impermeable) para regular
+                                    temperatura y humedad.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 bg-dark text-white">
+                            <iframe
+                                src="https://www.youtube.com/embed/_HOTMHFpQ7U?rel=0&fs=0&modestbranding=1&controls=1"
+                                title="Ropa de montaña" loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                style="border:0;">
+                            </iframe>
+                            <div class="card-body">
+                                <h3 class="h6">Nutrición</h3>
+                                <p class="card-text small">Hidratación constante y alimentos de alta densidad energética
+                                    (frutos secos, geles).</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 bg-dark text-white">
+                            <iframe src="https://www.youtube.com/embed/SqPm9JKOL_g" title="Ropa de montaña"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                style="border:0;">
+                            </iframe>
+                            <div class="card-body">
+                                <h3 class="h6">Técnica</h3>
+                                <p class="card-text small">Uso correcto de arnés, casco y puntos de anclaje para reducir
+                                    riesgos.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section> <!-- cierra #projects -->
+
+        <div class="modal fade" id="modal-arnes" tabindex="-1" aria-labelledby="modalArnesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-arnes.jpg" alt="Arnés" class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalArnesLabel">Arnés</h5>
+                        <p class="text-muted mb-3">
+                            Arnés cómodo y resistente para escalada deportiva y clásica. Hebillas rápidas y puntos de
+                            anclaje reforzados.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">Seguridad</span>
+                            <span class="badge bg-primary me-1">Ligero</span>
+                            <span class="badge bg-warning text-dark">Ajustable</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-casco" tabindex="-1" aria-labelledby="modalCascoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-casco.jpg" alt="Casco" class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalCascoLabel">Casco</h5>
+                        <p class="text-muted mb-3">
+                            Casco de escalada ultraligero con ventilación optimizada. Sistema de ajuste trasero y
+                            almohadillas interiores cómodas.
+                            anclaje reforzados.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">Seguridad</span>
+                            <span class="badge bg-primary me-1">Ligero</span>
+                            <span class="badge bg-warning text-dark">Ajustable</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade product-modal" id="modal-piolet" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-piolet.jpg" alt="Piolet" class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalPioletLabel">Piolet</h5>
+                        <p class="text-muted mb-3">
+                            Piolet técnico para hielo y mixto. Hoja intercambiable y mango ergonómico.
+                            anclaje reforzados.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">Durables</span>
+                            <span class="badge bg-primary me-1">Acero Inoxidable</span>
+                            <span class="badge bg-warning text-dark">Ergonómico</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade product-modal" id="modal-mochila" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-mochila.jpg" alt="Mochila" class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalMochilaLabel">Mochila</h5>
+                        <p class="text-muted mb-3">
+                            Mochila alpinismo 35L, resistente al agua, porta piolets y correas de
+                            compresión.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">Impermeable</span>
+                            <span class="badge bg-primary me-1">35L</span>
+                            <span class="badge bg-warning me-1">Ligera</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade product-modal" id="modal-cinta" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-cinta-express.jpg" alt="Cinta Express"
+                            class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalCintaLabel">Cinta Express</h5>
+                        <p class="text-muted mb-3">
+                            Cinta express con mosquetones de gatillo sólido y dogbone antitorsión. Alta resistencia a la
+                            tracción.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">CE/UIAA</span>
+                            <span class="badge bg-primary me-1">Antitorsión</span>
+                            <span class="badge bg-warning me-1">Durable</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade product-modal" id="modal-crampones" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <img src="./public/img/imagen-cinta-express.jpg" alt="Cinta Express"
+                            class="img-fluid w-100 rounded-top">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title mb-2" id="modalCintaLabel">Cinta Express</h5>
+                        <p class="text-muted mb-3">
+                            Cinta express con mosquetones de gatillo sólido y dogbone antitorsión. Alta resistencia a la
+                            tracción.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">Acero</span>
+                            <span class="badge bg-primary me-1">Automático</span>
+                            <span class="badge bg-warning me-1">12 puntas</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" onclick="loadPage(event,this.href)" class="btn btn-success">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid px-0 mt-7">
+            <div class="row g-0 bg-warning-subtle overflow-hidden align-items-center">
+
+                <div class="col-12 col-md-5 py-0 px-5 text-center text-md-start">
+                    <h5 class="fw-bold mb-3">¿Buscas unas zapatillas para correr?</h5>
+                    <p class="mb-3">Te recomendamos las más adecuadas para ti.</p>
+                    <a href="#calzado" class="btn btn-secondary">Empezar</a>
+                </div>
+                <div class="col-12 col-md-7 py-2 mx-auto">
+                    <div id="carouselEquiposPromo" class="carousel slide mb-4 mt-3" data-bs-ride="false"
+                        data-bs-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselEquiposPromo" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Arnés y Casco"></button>
+                            <button type="button" data-bs-target="#carouselEquiposPromo" data-bs-slide-to="1"
+                                aria-label="Piolet y Crampones"></button>
+                            <button type="button" data-bs-target="#carouselEquiposPromo" data-bs-slide-to="2"
+                                aria-label="Mochila y Cinta"></button>
+                        </div>
+
+                        <div class="carousel-inner rounded-3 shadow-sm">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-0">
+                                    <div class="col-6">
+                                        <a class="d-block position-relative overflow-hidden" data-bs-toggle="modal"
+                                            data-bs-target="#">
+                                            <img src="./public/img/imagen-zapatilla3.jpg" alt="Arnés" class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="d-block position-relative overflow-hidden" data-bs-toggle="modal"
+                                            data-bs-target="#">
+                                            <img src="./public/img/imagen-zapatilla1.jpg" alt="Casco" class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-0">
+                                    <div class="col-6">
+                                        <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                            <img src="./public/img/imagen-zapatilla.jpg" alt="Piolet" class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                            <img src="./public/img/imagen-crampones.jpg" alt="Crampones" class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="row g-0">
+                                    <div class="col-6">
+                                        <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                            <img src="./public/img/imagen-alpinismo4.jpg" alt="Mochila" class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="d-block overflow-hidden" data-bs-toggle="modal" data-bs-target="#">
+                                            <img src="./public/img/imagen-alpinismo5.jpg" alt="Cinta Express"
+                                                class="w-100"
+                                                style="height:200px;object-fit:cover;object-position:center;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquiposPromo"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEquiposPromo"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../public/vendor/bootstrap-5/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

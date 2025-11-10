@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../public/vendor/template/assets/favicon.ico" />
+    <link href="../public/vendor/template/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../public/vendor/bootstrap-5/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/estilo.css">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="encabezados fondo_2 d-flex align-items-center">
+            <div class="container px-4 px-lg-5 py-5" style="margin-top: 7rem;">
+               <form id="frmContacto" class="needs-validation" method="post" action="#">
+                    <h2 class="mb-4 text-center form-title fw-bold fs-1">Contactame</h2>
+
+                    <div class="row g-4">
+                        <!-- Caja 1: Datos personales -->
+                        <div class="col-12 col-lg-4">
+                            <fieldset
+                                class="card card-light border-0 rounded-3 shadow-sm h-100 position-relative overflow-hidden formato">
+                                <div class="card-header bg-transparent border-0 text-secondary fw-bold fs-5">Datos
+                                    personales</div>
+                                <div class="card-body">
+                                    <span></span><span></span><span></span><span></span>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            placeholder="Tu nombre" required minlength="2" maxlength="60">
+                                        <label for="nombre">Nombre completo *</label>
+                                        <div class="invalid-feedback">Ingrese su nombre (mín. 2 caracteres).</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="correo@ejemplo.com" required>
+                                        <label for="email">Correo electrónico *</label>
+                                        <div class="invalid-feedback">Ingrese un correo válido.</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="edad" name="edad"
+                                            placeholder="Edad" required min="18" max="90" step="1">
+                                        <label for="edad">Edad (18-90) *</label>
+                                        <div class="invalid-feedback">Ingrese una edad entre 18 y 90.</div>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                                        <label for="fecha">Fecha preferida de contacto *</label>
+                                        <div class="invalid-feedback">Seleccione una fecha válida.</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- Caja 2: Seguridad y contacto -->
+                        <div class="col-12 col-lg-4">
+                            <fieldset
+                                class="card card-light border-0 rounded-3 shadow-sm h-100 position-relative overflow-hidden formato">
+                                <div class="card-header bg-transparent border-0 text-secondary fw-bold fs-5">Seguridad y
+                                    contacto
+                                </div>
+                                <div class="card-body">
+                                    <span></span><span></span><span></span><span></span>
+                                    <div class="input-group mb-3">
+                                        <div class="form-floating flex-grow-1">
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                placeholder="Clave" required minlength="6" maxlength="20"
+                                                pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]{6,20}">
+                                            <label for="password">Contraseña *(6-20, letras y números)</label>
+                                            <div class="invalid-feedback">Debe contener letras y números.</div>
+                                        </div>
+                                        <button class="btn btn-outline-secondary" type="button" id="btnTogglePwd"
+                                            aria-label="Mostrar u ocultar contraseña">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="password2" name="password2"
+                                            placeholder="Confirmar contraseña" required>
+                                        <label for="password2">Confirmar contraseña *</label>
+                                        <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold fs-5">¿Cómo desea ser contactado? *</label>
+                                        <div class="d-flex gap-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="preferencia"
+                                                    id="prefEmail" value="email" required checked>
+                                                <label class="form-check-label fw-bold fs-6"
+                                                    for="prefEmail">Email</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="preferencia"
+                                                    id="prefTelefono" value="telefono" required>
+                                                <label class="form-check-label fw-bold fs-6"
+                                                    for="prefTelefono">Teléfono</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="telefono" name="telefono"
+                                            placeholder="+593999999999" pattern="^\+?\d{9,15}$" maxlength="16">
+                                        <label for="telefono">Teléfono (+ opcional, 9-15 dígitos)</label>
+                                        <div class="invalid-feedback">Formato: +xxxxxxxxx (9-15 dígitos).</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- Caja 3: Motivo y mensaje -->
+                        <div class="col-12 col-lg-4">
+                            <fieldset
+                                class="card card-light border-0 rounded-3 shadow-sm h-100 position-relative overflow-hidden formato">
+                                <div class="card-header bg-transparent border-0 text-secondary fw-bold fs-5">Motivo y
+                                    mensaje</div>
+                                <div class="card-body d-flex flex-column">
+                                    <span></span><span></span><span></span><span></span>
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="motivo" name="motivo" required>
+                                            <option value="" selected disabled>Seleccione...</option>
+                                            <option value="consulta">Consulta</option>
+                                            <option value="soporte">Soporte</option>
+                                            <option value="venta">Venta</option>
+                                        </select>
+                                        <label for="motivo">Motivo *</label>
+                                        <div class="invalid-feedback">Seleccione un motivo.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label fw-bold fs-5">Mensaje *</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                            placeholder="Escriba su mensaje (máx 500 caracteres)" required
+                                            maxlength="500"></textarea>
+                                        <div class="form-text">
+                                            <span id="mensajeCont">0</span>/500 caracteres.
+                                        </div>
+                                        <div class="invalid-feedback">Escriba su mensaje.</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <!-- Acciones y términos al final -->
+                    <div class="row g-4 mt-1">
+                        <div class="col-12">
+                            <div class="card card-light border-0 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <div class="row align-items-center gy-3">
+                                        <div class="col-12 col-lg">
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" id="boletin"
+                                                    name="boletin" value="1">
+                                                <label class="form-check-label fw-bold fs-5" for="boletin">Deseo recibir
+                                                    novedades y
+                                                    ofertas</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg">
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="1" id="terminos"
+                                                    required>
+                                                <label class="form-check-label fw-bold fs-5" for="terminos">Acepto
+                                                    términos y
+                                                    condiciones *</label>
+                                                <div class="invalid-feedback ">Debe aceptar los términos.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg d-flex justify-content-lg-end gap-2">
+                                            <button type="submit" class="btn btn-primary px-4">Enviar</button>
+                                            <button type="reset" class="btn btn-secondary px-4">Limpiar</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="formStatus" class="mt-3 small"></div>
+                                    <input type="text" name="website" id="website" class="d-none" tabindex="-1"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('frmContacto');
+            const status = document.getElementById('formStatus');
+            const pwd = document.getElementById('password');
+            const pwd2 = document.getElementById('password2');
+            const radioTel = document.getElementById('prefTelefono');
+            const telefono = document.getElementById('telefono');
+
+            const checkPasswords = () => {
+                if (!pwd || !pwd2) return;
+                if (pwd2.value && pwd.value !== pwd2.value) {
+                    pwd2.setCustomValidity('Las contraseñas no coinciden');
+                } else {
+                    pwd2.setCustomValidity('');
+                }
+            };
+            const syncTelefonoRequired = () => {
+                if (!telefono) return;
+                telefono.required = radioTel.checked;
+                if (!telefono.required) telefono.setCustomValidity('');
+            };
+
+            form.addEventListener('submit', (e) => {
+                checkPasswords();
+                syncTelefonoRequired();
+
+                // Honeypot
+                if ((document.getElementById('website')?.value ?? '') !== '') {
+                    e.preventDefault();
+                    status.className = 'text-danger';
+                    status.textContent = 'Detectado envío automatizado.';
+                    return;
+                }
+
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                    form.classList.add('was-validated');
+                    status.className = 'text-danger';
+                    status.textContent = 'Revisa los campos.';
+                    form.reportValidity();
+                    return;
+                }
+
+                // Envío real (sin preventDefault)
+                status.className = 'text-success';
+                status.textContent = 'Enviando...';
+            });
+        });
+    </script>
+    <script src="../public/vendor/bootstrap-5/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../public/js/form-contacto.js"></script>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
